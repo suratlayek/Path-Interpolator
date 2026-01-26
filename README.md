@@ -15,7 +15,7 @@ This project uses `uv` for extremely fast, reliable dependency management.
 
 1.  **Clone & Enter**:
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/suratlayek/Path-Interpolator
     cd path-interpolator
     ```
 2.  **Initialize & Sync**:
