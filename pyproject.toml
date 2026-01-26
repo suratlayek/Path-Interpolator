@@ -1,0 +1,17 @@
+[project]
+name = "path-interpolator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.4.1",
+    "pyqt6>=6.10.2",
+    "pyqtgraph>=0.14.0",
+    "shapely>=2.1.2",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.18.0",
+]
