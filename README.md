@@ -1,6 +1,11 @@
-# Path Interpolator v1.0
+# Path Interpolator
+
+[![Download](https://img.shields.io/badge/Download_Installer-v1.0-brightgreen)](https://github.com/suratlayek/Path-Interpolator/releases/download/V1/path-interpolator-1.0-setup.exe)
+
 
 A Python-based GUI utility for processing geometric paths. This tool takes a series of coordinates, applies a spatial offset (buffer), and interpolates points at fixed intervals along the resulting path.
+
+<img width="478" height="305" alt="screenshot1" src="https://github.com/user-attachments/assets/8c0ed71a-ce9d-4772-ba23-198d516fc4d5" />
 
 ## Features
 * **Path Offsetting**: Expand or contract paths using a numerical offset via Shapely buffers.
