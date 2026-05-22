@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Path Interpolator | Geometric Path Processing Utility</title>
     
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="Assets/icon.svg">
 
     <style>
@@ -42,7 +41,7 @@
         a { text-decoration: none; color: inherit; transition: 0.2s; }
         ul { list-style: none; }
         
-        img { max-width: 100%; display: block; border-radius: var(--radius); }
+        img { width: 100%; max-width: 100%; display: block; border-radius: var(--radius); height: auto; }
 
         /* --- Typography --- */
         h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
@@ -52,7 +51,7 @@
         p { color: var(--text-muted); margin-bottom: 1.5rem; }
 
         /* --- Layout Utilities --- */
-        .container { max-width: var(--container-width); margin: 0 auto; padding: 0 20px; }
+        .container { max-width: var(--container-width); margin: 0 auto; padding: 0 20px; width: 100%; }
         .section { padding: 80px 0; border-bottom: 1px solid var(--border); }
         .grid { display: grid; gap: 24px; }
         .grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
@@ -106,15 +105,18 @@
         /* --- Hero --- */
         .hero { padding: 160px 0 80px 0; text-align: center; }
         .hero-content { max-width: 800px; margin: 0 auto; }
-        .hero-badges { display: flex; justify-content: center; gap: 16px; margin-bottom: 32px; }
+        .hero-badges { display: flex; justify-content: center; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; }
         .badge { background: rgba(239, 68, 68, 0.1); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; color: var(--primary-hover); font-weight: 500; }
         
+        /* FIXED HERO IMAGE RESPONSIVE BOUNDARIES RULES BLOCK */
         .hero-img {
             margin: 60px auto 0 auto;
             box-shadow: 0 20px 50px -10px rgba(0,0,0,0.1);
             border: 1px solid var(--border);
-            max-width: 100%;
+            width: 100%;
+            max-width: 600px; /* Locks upper scaling ceiling to matches layout parameters */
             height: auto;
+            display: block;
         }
 
         /* --- Features --- */
@@ -219,8 +221,7 @@
     <header>
         <div class="container">
             <a href="#" class="logo">
-                <!-- Path/Interpolate SVG Icon -->
-                <img src="Assets/icon_light.svg" alt="Align View Logo" class="logo-img" style="width: 24px; height: 24px; border-radius: 0;" >
+                <img src="Assets/icon_light.svg" alt="Align View Logo" class="logo-img" style="width: 24px; height: 24px; border-radius: 0; display: inline-block; max-width: 24px;" >
                 Path Interpolator
             </a>
             <nav>
@@ -230,7 +231,6 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
@@ -264,7 +264,6 @@
             </div>
         </section>
 
-        <!-- Features Section -->
         <section class="section" id="features">
             <div class="container">
                 <h2>Key Features</h2>
@@ -297,7 +296,6 @@
             </div>
         </section>
 
-        <!-- How to Use Section -->
         <section class="section" id="usage">
             <div class="container">
                 <h2>How to Use</h2>
@@ -335,7 +333,6 @@
             </div>
         </section>
 
-        <!-- Installation Section -->
         <section class="section" id="installation">
             <div class="container">
                 <h2>Setup and Execution</h2>
@@ -359,7 +356,6 @@
             </div>
         </section>
 
-        <!-- End User Info Section -->
         <section class="section">
             <div class="container">
                 <div class="ack-card">
